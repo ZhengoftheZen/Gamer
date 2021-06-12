@@ -107,7 +107,7 @@ public class TestFrame extends javax.swing.JFrame {
     public static void main(String args[]) {
         for(int i =0;i < 4; i++) {
             for(int x = 0; x<13; x++) {
-                cards[i][x] = new ImageIcon(card(i,x)+".png");
+                cards[i][x] = new ImageIcon(card(i,x)+" (cards).png");
             }
         }
          dealCards(humanPlayer.hand, cards, dealt);
