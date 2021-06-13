@@ -33,6 +33,7 @@ public class TestFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         image = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -42,7 +43,7 @@ public class TestFrame extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(408, 300));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 51));
+        jButton1.setBackground(new java.awt.Color(255, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jButton1.setText("Start");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.red, java.awt.Color.red, java.awt.Color.red, java.awt.Color.red));
@@ -62,6 +63,16 @@ public class TestFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 480, 240, 70));
+
+        jButton3.setBackground(new java.awt.Color(0, 51, 255));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jButton3.setText("Quit");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 590, 230, 60));
 
         image.setText("Fish");
 
@@ -103,14 +114,51 @@ public class TestFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        image.setIcon(cards[3][4]);
+        JLabel label = new JLabel("");
+        String rules = "Game Rules \n" +
+    "Starting the Game The first thing you do is deal cards to the players. For 2 to 3 players you deal each player 7 cards. If there are more than three players, deal 5 cards each. The rest of the deck is placed in the middle of the players face down. \n" +
+    "\n" +
+    "Taking a Turn \n" +
+    "Each player gets a turn in clockwise order\n" +
+    "\n" +
+    "During a player’s turn they can ask one other player if they have a particular rank of card. For example, a player may ask another player if they have any aces, then if that other player has aces they must give all of their aces to the player. If the player is given their requested card, they may take another turn. However, if the other player does not have the requested card, they must say “go fish” and the player must draw a card from the deck. If the player draws the card they requested for they may also take another turn.\n" +
+    "\n" +
+    "If the player gets all four suits of the same rank, they must put the cards face up in front of them. For example, if the player has a nine of hearts, clubs, spades, and diamonds, they must place the set of cards down in front of them and they can take another turn.\n" +
+    "\n" +
+    "Winning the Game\n" +
+    "Go Fish is over when one player runs out of cards or there are no more cards in the pool. The winner is then determined by who has the most piles or suits of cards in front of them.";
+        
+    JTextArea textArea = new JTextArea(2, 20);
+    textArea.setText(rules);
+    textArea.setWrapStyleWord(true);
+    textArea.setLineWrap(true);
+    textArea.setOpaque(false);
+    textArea.setEditable(false);
+    textArea.setFocusable(false);
+    textArea.setBackground(UIManager.getColor("Label.background"));
+    textArea.setFont(UIManager.getFont("Label.font"));
+    textArea.setBorder(UIManager.getBorder("Label.border"));
+
+    JFrame frame = new JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.getContentPane().add(label, BorderLayout.NORTH);
+    frame.getContentPane().add(textArea, BorderLayout.CENTER);
+    frame.setSize(400,600);
+    frame.setLocationRelativeTo(null);
+    frame.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        image.setIcon(cards[1][2]);
+        this.dispose();
+        new Gameplay().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        System.exit(0);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,6 +237,7 @@ public static void dealCards(ArrayList<ImageIcon> hand, ImageIcon[][] cards, boo
     private javax.swing.JLabel image;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
