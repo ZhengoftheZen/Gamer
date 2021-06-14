@@ -44,36 +44,30 @@ public class Gameplay extends javax.swing.JFrame {
         button12 = new javax.swing.JButton();
         button13 = new javax.swing.JButton();
         button1 = new javax.swing.JButton();
-        button15 = new javax.swing.JButton();
-        button16 = new javax.swing.JButton();
-        button17 = new javax.swing.JButton();
-        button18 = new javax.swing.JButton();
-        button19 = new javax.swing.JButton();
-        button20 = new javax.swing.JButton();
-        buton21 = new javax.swing.JButton();
-        button22 = new javax.swing.JButton();
-        button23 = new javax.swing.JButton();
-        button24 = new javax.swing.JButton();
-        button25 = new javax.swing.JButton();
-        button26 = new javax.swing.JButton();
-        button14 = new javax.swing.JButton();
-        button28 = new javax.swing.JButton();
-        button29 = new javax.swing.JButton();
-        button30 = new javax.swing.JButton();
-        button31 = new javax.swing.JButton();
-        button32 = new javax.swing.JButton();
-        button33 = new javax.swing.JButton();
-        button34 = new javax.swing.JButton();
-        button35 = new javax.swing.JButton();
-        button36 = new javax.swing.JButton();
-        button37 = new javax.swing.JButton();
-        button38 = new javax.swing.JButton();
-        button39 = new javax.swing.JButton();
-        button27 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
         tableBackground = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -218,284 +212,118 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 790, -1, -1));
 
-        button15.setMaximumSize(new java.awt.Dimension(127, 180));
-        button15.setMinimumSize(new java.awt.Dimension(127, 180));
-        button15.setPreferredSize(new java.awt.Dimension(127, 180));
-        button15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button15ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 740, -1, -1));
+        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel1.setText("jLabel1");
+        jLabel1.setOpaque(true);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 740, 120, 40));
 
-        button16.setMaximumSize(new java.awt.Dimension(127, 180));
-        button16.setMinimumSize(new java.awt.Dimension(127, 180));
-        button16.setPreferredSize(new java.awt.Dimension(127, 180));
-        button16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button16ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button16, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 740, -1, -1));
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setText("jLabel1");
+        jLabel2.setOpaque(true);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 740, 120, 40));
 
-        button17.setMaximumSize(new java.awt.Dimension(127, 180));
-        button17.setMinimumSize(new java.awt.Dimension(127, 180));
-        button17.setPreferredSize(new java.awt.Dimension(127, 180));
-        button17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button17ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 740, -1, -1));
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel3.setText("jLabel1");
+        jLabel3.setOpaque(true);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 740, 120, 40));
 
-        button18.setMaximumSize(new java.awt.Dimension(127, 180));
-        button18.setMinimumSize(new java.awt.Dimension(127, 180));
-        button18.setPreferredSize(new java.awt.Dimension(127, 180));
-        button18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button18ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 740, -1, -1));
+        jLabel4.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel4.setText("jLabel1");
+        jLabel4.setOpaque(true);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 740, 120, 40));
 
-        button19.setMaximumSize(new java.awt.Dimension(127, 180));
-        button19.setMinimumSize(new java.awt.Dimension(127, 180));
-        button19.setPreferredSize(new java.awt.Dimension(127, 180));
-        button19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button19ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button19, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 740, -1, -1));
+        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel5.setText("jLabel1");
+        jLabel5.setOpaque(true);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 740, 120, 40));
 
-        button20.setMaximumSize(new java.awt.Dimension(127, 180));
-        button20.setMinimumSize(new java.awt.Dimension(127, 180));
-        button20.setPreferredSize(new java.awt.Dimension(127, 180));
-        button20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button20ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button20, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 740, -1, -1));
+        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel6.setText("jLabel1");
+        jLabel6.setOpaque(true);
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 740, 120, 40));
 
-        buton21.setMaximumSize(new java.awt.Dimension(127, 180));
-        buton21.setMinimumSize(new java.awt.Dimension(127, 180));
-        buton21.setPreferredSize(new java.awt.Dimension(127, 180));
-        buton21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buton21ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(buton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 740, -1, -1));
+        jLabel7.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel7.setText("jLabel1");
+        jLabel7.setOpaque(true);
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 740, 120, 40));
 
-        button22.setMaximumSize(new java.awt.Dimension(127, 180));
-        button22.setMinimumSize(new java.awt.Dimension(127, 180));
-        button22.setPreferredSize(new java.awt.Dimension(127, 180));
-        button22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button22ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 740, -1, -1));
+        jLabel8.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel8.setText("jLabel1");
+        jLabel8.setOpaque(true);
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 740, 120, 40));
 
-        button23.setMaximumSize(new java.awt.Dimension(127, 180));
-        button23.setMinimumSize(new java.awt.Dimension(127, 180));
-        button23.setPreferredSize(new java.awt.Dimension(127, 180));
-        button23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button23ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 740, -1, -1));
+        jLabel9.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel9.setText("jLabel1");
+        jLabel9.setOpaque(true);
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 740, 120, 40));
 
-        button24.setMaximumSize(new java.awt.Dimension(127, 180));
-        button24.setMinimumSize(new java.awt.Dimension(127, 180));
-        button24.setPreferredSize(new java.awt.Dimension(127, 180));
-        button24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button24ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 740, -1, -1));
+        jLabel10.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel10.setText("jLabel1");
+        jLabel10.setOpaque(true);
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 740, 120, 40));
 
-        button25.setMaximumSize(new java.awt.Dimension(127, 180));
-        button25.setMinimumSize(new java.awt.Dimension(127, 180));
-        button25.setPreferredSize(new java.awt.Dimension(127, 180));
-        button25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button25ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 740, -1, -1));
+        jLabel11.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel11.setText("jLabel1");
+        jLabel11.setOpaque(true);
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 740, 120, 40));
 
-        button26.setMaximumSize(new java.awt.Dimension(127, 180));
-        button26.setMinimumSize(new java.awt.Dimension(127, 180));
-        button26.setPreferredSize(new java.awt.Dimension(127, 180));
-        button26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button26ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 740, -1, -1));
+        jLabel12.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel12.setText("jLabel1");
+        jLabel12.setOpaque(true);
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 740, 120, 40));
 
-        button14.setMaximumSize(new java.awt.Dimension(127, 180));
-        button14.setMinimumSize(new java.awt.Dimension(127, 180));
-        button14.setPreferredSize(new java.awt.Dimension(127, 180));
-        button14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button14ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 740, -1, -1));
+        jLabel13.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel13.setText("jLabel1");
+        jLabel13.setOpaque(true);
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 740, 120, 40));
 
-        button28.setMaximumSize(new java.awt.Dimension(127, 180));
-        button28.setMinimumSize(new java.awt.Dimension(127, 180));
-        button28.setPreferredSize(new java.awt.Dimension(127, 180));
-        button28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button28ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 680, -1, -1));
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane3.setViewportView(jTextArea3);
 
-        button29.setMaximumSize(new java.awt.Dimension(127, 180));
-        button29.setMinimumSize(new java.awt.Dimension(127, 180));
-        button29.setPreferredSize(new java.awt.Dimension(127, 180));
-        button29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button29ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button29, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 680, -1, -1));
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 250, 210, 300));
 
-        button30.setMaximumSize(new java.awt.Dimension(127, 180));
-        button30.setMinimumSize(new java.awt.Dimension(127, 180));
-        button30.setPreferredSize(new java.awt.Dimension(127, 180));
-        button30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button30ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button30, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 680, -1, -1));
+        jTextArea4.setColumns(20);
+        jTextArea4.setRows(5);
+        jScrollPane4.setViewportView(jTextArea4);
 
-        button31.setMaximumSize(new java.awt.Dimension(127, 180));
-        button31.setMinimumSize(new java.awt.Dimension(127, 180));
-        button31.setPreferredSize(new java.awt.Dimension(127, 180));
-        button31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button31ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button31, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 680, -1, -1));
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 250, 210, 300));
 
-        button32.setMaximumSize(new java.awt.Dimension(127, 180));
-        button32.setMinimumSize(new java.awt.Dimension(127, 180));
-        button32.setPreferredSize(new java.awt.Dimension(127, 180));
-        button32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button32ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 680, -1, -1));
+        jTextArea5.setColumns(20);
+        jTextArea5.setRows(5);
+        jScrollPane5.setViewportView(jTextArea5);
 
-        button33.setMaximumSize(new java.awt.Dimension(127, 180));
-        button33.setMinimumSize(new java.awt.Dimension(127, 180));
-        button33.setPreferredSize(new java.awt.Dimension(127, 180));
-        button33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button33ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 680, -1, -1));
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, 210, 300));
 
-        button34.setMaximumSize(new java.awt.Dimension(127, 180));
-        button34.setMinimumSize(new java.awt.Dimension(127, 180));
-        button34.setPreferredSize(new java.awt.Dimension(127, 180));
-        button34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button34ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button34, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 680, -1, -1));
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("AI2");
+        jLabel14.setOpaque(true);
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 220, 210, 30));
 
-        button35.setMaximumSize(new java.awt.Dimension(127, 180));
-        button35.setMinimumSize(new java.awt.Dimension(127, 180));
-        button35.setPreferredSize(new java.awt.Dimension(127, 180));
-        button35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button35ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 680, -1, -1));
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("AI3");
+        jLabel15.setOpaque(true);
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 220, 210, 30));
 
-        button36.setMaximumSize(new java.awt.Dimension(127, 180));
-        button36.setMinimumSize(new java.awt.Dimension(127, 180));
-        button36.setPreferredSize(new java.awt.Dimension(127, 180));
-        button36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button36ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button36, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 680, -1, -1));
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("AI1");
+        jLabel16.setOpaque(true);
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 210, 30));
 
-        button37.setMaximumSize(new java.awt.Dimension(127, 180));
-        button37.setMinimumSize(new java.awt.Dimension(127, 180));
-        button37.setPreferredSize(new java.awt.Dimension(127, 180));
-        button37.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button37ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button37, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 680, -1, -1));
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel17.setText("Turn:");
+        jLabel17.setOpaque(true);
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 125, 260, 60));
 
-        button38.setMaximumSize(new java.awt.Dimension(127, 180));
-        button38.setMinimumSize(new java.awt.Dimension(127, 180));
-        button38.setPreferredSize(new java.awt.Dimension(127, 180));
-        button38.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button38ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button38, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 680, -1, -1));
-
-        button39.setMaximumSize(new java.awt.Dimension(127, 180));
-        button39.setMinimumSize(new java.awt.Dimension(127, 180));
-        button39.setPreferredSize(new java.awt.Dimension(127, 180));
-        button39.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button39ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button39, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 680, -1, -1));
-
-        button27.setMaximumSize(new java.awt.Dimension(127, 180));
-        button27.setMinimumSize(new java.awt.Dimension(127, 180));
-        button27.setPreferredSize(new java.awt.Dimension(127, 180));
-        button27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button27ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(button27, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 680, -1, -1));
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane1.setViewportView(jList1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, -1, -1));
-
-        tableBackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\andre\\Documents\\NetBeansProjects\\Gamer-Fish\\Gamer -Fish\\table.png")); // NOI18N
+        tableBackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\andre\\Documents\\NetBeansProjects\\Gamer-Fish\\Gamer -Fish\\table with boxes.png")); // NOI18N
         tableBackground.setText("jLabel2");
         tableBackground.setMaximumSize(new java.awt.Dimension(1920, 1080));
         tableBackground.setMinimumSize(new java.awt.Dimension(1920, 1080));
         tableBackground.setPreferredSize(new java.awt.Dimension(1920, 1080));
-        getContentPane().add(tableBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 430, -1, -1));
+        getContentPane().add(tableBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1920, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -556,110 +384,6 @@ public class Gameplay extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_button1ActionPerformed
 
-    private void button15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button15ActionPerformed
-
-    private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button16ActionPerformed
-
-    private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button17ActionPerformed
-
-    private void button18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button18ActionPerformed
-
-    private void button19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button19ActionPerformed
-
-    private void button20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button20ActionPerformed
-
-    private void buton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buton21ActionPerformed
-
-    private void button22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button22ActionPerformed
-
-    private void button23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button23ActionPerformed
-
-    private void button24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button24ActionPerformed
-
-    private void button25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button25ActionPerformed
-
-    private void button26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button26ActionPerformed
-
-    private void button14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button14ActionPerformed
-
-    private void button28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button28ActionPerformed
-
-    private void button29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button29ActionPerformed
-
-    private void button30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button30ActionPerformed
-
-    private void button31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button31ActionPerformed
-
-    private void button32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button32ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button32ActionPerformed
-
-    private void button33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button33ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button33ActionPerformed
-
-    private void button34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button34ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button34ActionPerformed
-
-    private void button35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button35ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button35ActionPerformed
-
-    private void button36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button36ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button36ActionPerformed
-
-    private void button37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button37ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button37ActionPerformed
-
-    private void button38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button38ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button38ActionPerformed
-
-    private void button39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button39ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button39ActionPerformed
-
-    private void button27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button27ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -698,48 +422,42 @@ public class Gameplay extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton MenuButton;
-    private javax.swing.JButton buton21;
     private javax.swing.JButton button1;
     private javax.swing.JButton button10;
     private javax.swing.JButton button11;
     private javax.swing.JButton button12;
     private javax.swing.JButton button13;
-    private javax.swing.JButton button14;
-    private javax.swing.JButton button15;
-    private javax.swing.JButton button16;
-    private javax.swing.JButton button17;
-    private javax.swing.JButton button18;
-    private javax.swing.JButton button19;
     private javax.swing.JButton button2;
-    private javax.swing.JButton button20;
-    private javax.swing.JButton button22;
-    private javax.swing.JButton button23;
-    private javax.swing.JButton button24;
-    private javax.swing.JButton button25;
-    private javax.swing.JButton button26;
-    private javax.swing.JButton button27;
-    private javax.swing.JButton button28;
-    private javax.swing.JButton button29;
     private javax.swing.JButton button3;
-    private javax.swing.JButton button30;
-    private javax.swing.JButton button31;
-    private javax.swing.JButton button32;
-    private javax.swing.JButton button33;
-    private javax.swing.JButton button34;
-    private javax.swing.JButton button35;
-    private javax.swing.JButton button36;
-    private javax.swing.JButton button37;
-    private javax.swing.JButton button38;
-    private javax.swing.JButton button39;
     private javax.swing.JButton button4;
     private javax.swing.JButton button5;
     private javax.swing.JButton button6;
     private javax.swing.JButton button7;
     private javax.swing.JButton button8;
     private javax.swing.JButton button9;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
     private javax.swing.JLabel tableBackground;
     // End of variables declaration//GEN-END:variables
     //private javax.swing.JButton[] playerHand = new JButton[39];
