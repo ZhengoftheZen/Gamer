@@ -5,6 +5,8 @@
  */
 package gamer.fish;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author andre
@@ -14,6 +16,7 @@ public class Gameplay extends javax.swing.JFrame {
     /**
      * Creates new form Gameplay
      */
+    JButton[][] playerHand = new JButton[3][13];
     public Gameplay() {
         initComponents();
     }
@@ -67,12 +70,14 @@ public class Gameplay extends javax.swing.JFrame {
         button38 = new javax.swing.JButton();
         button39 = new javax.swing.JButton();
         button27 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
         tableBackground = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         MenuButton.setText("Menu");
@@ -83,7 +88,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(MenuButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 60));
 
-        button2.setText("button2");
         button2.setMaximumSize(new java.awt.Dimension(127, 180));
         button2.setMinimumSize(new java.awt.Dimension(127, 180));
         button2.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -94,7 +98,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 790, -1, -1));
 
-        button3.setText("button3");
         button3.setMaximumSize(new java.awt.Dimension(127, 180));
         button3.setMinimumSize(new java.awt.Dimension(127, 180));
         button3.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -105,7 +108,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 790, -1, -1));
 
-        button4.setText("button4");
         button4.setMaximumSize(new java.awt.Dimension(127, 180));
         button4.setMinimumSize(new java.awt.Dimension(127, 180));
         button4.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -116,7 +118,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 790, -1, -1));
 
-        button5.setText("button5");
         button5.setMaximumSize(new java.awt.Dimension(127, 180));
         button5.setMinimumSize(new java.awt.Dimension(127, 180));
         button5.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -127,7 +128,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 790, -1, -1));
 
-        button6.setText("button6");
         button6.setMaximumSize(new java.awt.Dimension(127, 180));
         button6.setMinimumSize(new java.awt.Dimension(127, 180));
         button6.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -138,7 +138,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button6, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 790, -1, -1));
 
-        button7.setText("button7");
         button7.setMaximumSize(new java.awt.Dimension(127, 180));
         button7.setMinimumSize(new java.awt.Dimension(127, 180));
         button7.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -149,7 +148,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button7, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 790, -1, -1));
 
-        button8.setText("button8");
         button8.setMaximumSize(new java.awt.Dimension(127, 180));
         button8.setMinimumSize(new java.awt.Dimension(127, 180));
         button8.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -160,7 +158,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 790, -1, -1));
 
-        button9.setText("button9");
         button9.setMaximumSize(new java.awt.Dimension(127, 180));
         button9.setMinimumSize(new java.awt.Dimension(127, 180));
         button9.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -171,7 +168,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 790, -1, -1));
 
-        button10.setText("button10");
         button10.setMaximumSize(new java.awt.Dimension(127, 180));
         button10.setMinimumSize(new java.awt.Dimension(127, 180));
         button10.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -182,7 +178,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 790, -1, -1));
 
-        button11.setText("button11");
         button11.setMaximumSize(new java.awt.Dimension(127, 180));
         button11.setMinimumSize(new java.awt.Dimension(127, 180));
         button11.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -193,7 +188,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 790, -1, -1));
 
-        button12.setText("button12");
         button12.setMaximumSize(new java.awt.Dimension(127, 180));
         button12.setMinimumSize(new java.awt.Dimension(127, 180));
         button12.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -204,7 +198,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 790, -1, -1));
 
-        button13.setText("button13");
         button13.setMaximumSize(new java.awt.Dimension(127, 180));
         button13.setMinimumSize(new java.awt.Dimension(127, 180));
         button13.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -215,7 +208,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 790, -1, -1));
 
-        button1.setText("button1");
         button1.setMaximumSize(new java.awt.Dimension(127, 180));
         button1.setMinimumSize(new java.awt.Dimension(127, 180));
         button1.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -226,7 +218,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 790, -1, -1));
 
-        button15.setText("jButton1");
         button15.setMaximumSize(new java.awt.Dimension(127, 180));
         button15.setMinimumSize(new java.awt.Dimension(127, 180));
         button15.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -237,7 +228,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 740, -1, -1));
 
-        button16.setText("jButton3");
         button16.setMaximumSize(new java.awt.Dimension(127, 180));
         button16.setMinimumSize(new java.awt.Dimension(127, 180));
         button16.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -248,7 +238,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button16, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 740, -1, -1));
 
-        button17.setText("jButton1");
         button17.setMaximumSize(new java.awt.Dimension(127, 180));
         button17.setMinimumSize(new java.awt.Dimension(127, 180));
         button17.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -259,7 +248,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button17, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 740, -1, -1));
 
-        button18.setText("jButton1");
         button18.setMaximumSize(new java.awt.Dimension(127, 180));
         button18.setMinimumSize(new java.awt.Dimension(127, 180));
         button18.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -270,7 +258,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 740, -1, -1));
 
-        button19.setText("jButton1");
         button19.setMaximumSize(new java.awt.Dimension(127, 180));
         button19.setMinimumSize(new java.awt.Dimension(127, 180));
         button19.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -281,7 +268,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button19, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 740, -1, -1));
 
-        button20.setText("jButton1");
         button20.setMaximumSize(new java.awt.Dimension(127, 180));
         button20.setMinimumSize(new java.awt.Dimension(127, 180));
         button20.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -292,7 +278,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button20, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 740, -1, -1));
 
-        buton21.setText("jButton1");
         buton21.setMaximumSize(new java.awt.Dimension(127, 180));
         buton21.setMinimumSize(new java.awt.Dimension(127, 180));
         buton21.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -303,7 +288,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(buton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 740, -1, -1));
 
-        button22.setText("jButton1");
         button22.setMaximumSize(new java.awt.Dimension(127, 180));
         button22.setMinimumSize(new java.awt.Dimension(127, 180));
         button22.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -314,7 +298,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 740, -1, -1));
 
-        button23.setText("jButton1");
         button23.setMaximumSize(new java.awt.Dimension(127, 180));
         button23.setMinimumSize(new java.awt.Dimension(127, 180));
         button23.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -325,7 +308,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 740, -1, -1));
 
-        button24.setText("jButton1");
         button24.setMaximumSize(new java.awt.Dimension(127, 180));
         button24.setMinimumSize(new java.awt.Dimension(127, 180));
         button24.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -336,7 +318,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 740, -1, -1));
 
-        button25.setText("jButton1");
         button25.setMaximumSize(new java.awt.Dimension(127, 180));
         button25.setMinimumSize(new java.awt.Dimension(127, 180));
         button25.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -347,7 +328,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 740, -1, -1));
 
-        button26.setText("jButton1");
         button26.setMaximumSize(new java.awt.Dimension(127, 180));
         button26.setMinimumSize(new java.awt.Dimension(127, 180));
         button26.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -358,7 +338,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 740, -1, -1));
 
-        button14.setText("jButton1");
         button14.setMaximumSize(new java.awt.Dimension(127, 180));
         button14.setMinimumSize(new java.awt.Dimension(127, 180));
         button14.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -369,7 +348,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 740, -1, -1));
 
-        button28.setText("jButton1");
         button28.setMaximumSize(new java.awt.Dimension(127, 180));
         button28.setMinimumSize(new java.awt.Dimension(127, 180));
         button28.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -380,7 +358,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button28, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 680, -1, -1));
 
-        button29.setText("jButton3");
         button29.setMaximumSize(new java.awt.Dimension(127, 180));
         button29.setMinimumSize(new java.awt.Dimension(127, 180));
         button29.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -391,7 +368,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button29, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 680, -1, -1));
 
-        button30.setText("jButton1");
         button30.setMaximumSize(new java.awt.Dimension(127, 180));
         button30.setMinimumSize(new java.awt.Dimension(127, 180));
         button30.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -402,7 +378,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button30, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 680, -1, -1));
 
-        button31.setText("jButton1");
         button31.setMaximumSize(new java.awt.Dimension(127, 180));
         button31.setMinimumSize(new java.awt.Dimension(127, 180));
         button31.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -413,7 +388,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button31, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 680, -1, -1));
 
-        button32.setText("jButton1");
         button32.setMaximumSize(new java.awt.Dimension(127, 180));
         button32.setMinimumSize(new java.awt.Dimension(127, 180));
         button32.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -424,7 +398,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 680, -1, -1));
 
-        button33.setText("jButton1");
         button33.setMaximumSize(new java.awt.Dimension(127, 180));
         button33.setMinimumSize(new java.awt.Dimension(127, 180));
         button33.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -435,7 +408,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 680, -1, -1));
 
-        button34.setText("jButton1");
         button34.setMaximumSize(new java.awt.Dimension(127, 180));
         button34.setMinimumSize(new java.awt.Dimension(127, 180));
         button34.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -446,7 +418,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button34, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 680, -1, -1));
 
-        button35.setText("jButton1");
         button35.setMaximumSize(new java.awt.Dimension(127, 180));
         button35.setMinimumSize(new java.awt.Dimension(127, 180));
         button35.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -457,7 +428,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 680, -1, -1));
 
-        button36.setText("jButton1");
         button36.setMaximumSize(new java.awt.Dimension(127, 180));
         button36.setMinimumSize(new java.awt.Dimension(127, 180));
         button36.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -468,7 +438,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button36, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 680, -1, -1));
 
-        button37.setText("jButton1");
         button37.setMaximumSize(new java.awt.Dimension(127, 180));
         button37.setMinimumSize(new java.awt.Dimension(127, 180));
         button37.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -479,7 +448,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button37, new org.netbeans.lib.awtextra.AbsoluteConstraints(1420, 680, -1, -1));
 
-        button38.setText("jButton1");
         button38.setMaximumSize(new java.awt.Dimension(127, 180));
         button38.setMinimumSize(new java.awt.Dimension(127, 180));
         button38.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -490,7 +458,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button38, new org.netbeans.lib.awtextra.AbsoluteConstraints(1550, 680, -1, -1));
 
-        button39.setText("jButton1");
         button39.setMaximumSize(new java.awt.Dimension(127, 180));
         button39.setMinimumSize(new java.awt.Dimension(127, 180));
         button39.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -501,7 +468,6 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button39, new org.netbeans.lib.awtextra.AbsoluteConstraints(1680, 680, -1, -1));
 
-        button27.setText("jButton1");
         button27.setMaximumSize(new java.awt.Dimension(127, 180));
         button27.setMinimumSize(new java.awt.Dimension(127, 180));
         button27.setPreferredSize(new java.awt.Dimension(127, 180));
@@ -512,12 +478,24 @@ public class Gameplay extends javax.swing.JFrame {
         });
         getContentPane().add(button27, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 680, -1, -1));
 
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, -1, -1));
+
         tableBackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\andre\\Documents\\NetBeansProjects\\Gamer-Fish\\Gamer -Fish\\table.png")); // NOI18N
         tableBackground.setText("jLabel2");
         tableBackground.setMaximumSize(new java.awt.Dimension(1920, 1080));
         tableBackground.setMinimumSize(new java.awt.Dimension(1920, 1080));
         tableBackground.setPreferredSize(new java.awt.Dimension(1920, 1080));
         getContentPane().add(tableBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 430, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -715,7 +693,7 @@ public class Gameplay extends javax.swing.JFrame {
                 new Gameplay().setVisible(true);
             }
         });
-
+        //playerHand [0][0] = button1;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -759,6 +737,10 @@ public class Gameplay extends javax.swing.JFrame {
     private javax.swing.JButton button7;
     private javax.swing.JButton button8;
     private javax.swing.JButton button9;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel tableBackground;
     // End of variables declaration//GEN-END:variables
+    //private javax.swing.JButton[] playerHand = new JButton[39];
 }
