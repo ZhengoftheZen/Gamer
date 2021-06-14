@@ -9,9 +9,10 @@ import javax.swing.*;
 import java.util.*;
 public class humanPlayer {
     
-    public static ArrayList<ImageIcon> hand = new ArrayList<>();
-    public static ArrayList<ImageIcon> winCon = new ArrayList<>();
-    public humanPlayer(ArrayList<ImageIcon> hand) {
+    public static ArrayList<String> hand = new ArrayList<>();
+    public ArrayList<Integer> points = new ArrayList<>();
+    public Integer score = 0;
+    public humanPlayer(ArrayList<String> hand) {
         this.hand = hand;
     }
     public humanPlayer() {
