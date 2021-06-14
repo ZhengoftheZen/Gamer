@@ -15,14 +15,12 @@ public class TestFrame extends javax.swing.JFrame {
     public TestFrame() {
         initComponents();
     }
-    static ImageIcon cards[][] = new ImageIcon[4][13];
-        static boolean dealt[][] = new boolean[4][13];
+
+  
         // diamond clover heart spades
         
-        static humanPlayer player1 = new humanPlayer();
-    
-        static ImageIcon[][] deck = new ImageIcon[4][13];
-    
+      
+       
     static ImageIcon fish = new ImageIcon("fish.png");
     static ImageIcon table = new ImageIcon("table.png");
 
@@ -142,20 +140,7 @@ public class TestFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        for(int i =0;i < 4; i++) {
-            for(int x = 0; x<13; x++) {
-                cards[i][x] = new ImageIcon(card(i,x)+" (cards).png");
-            }
-        }
         
-         dealCards(humanPlayer.hand, cards, dealt);
-                for(int i = 0; i < 4; i++) {
-            for(int x = 0; x < 13; x++) {
-                if(!dealt[i][x]) {
-                    deck[i][x] = cards[i][x];
-                }
-            }
-        }
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -186,31 +171,9 @@ public class TestFrame extends javax.swing.JFrame {
             }
         });
     }
-public static void dealCards(ArrayList<ImageIcon> hand, ImageIcon[][] cards, boolean[][] dealt) {
-        while(hand.size()<5) {
-            Random rand = new Random();
-            int x = rand.nextInt(4);
-            int y = rand.nextInt(13);
-            if(dealt[x][y] == false) {
-                hand.add(cards[x][y]);
-                dealt[x][y] = true;
-            }
-        }
-    }
 
-    public static String card(int i, int y) {
-        String id = "";
-        if(i == 0) {
-            id = "d";
-        }else if(i == 1) {
-            id = "c";
-        }else if(i == 2) {
-            id = "h";
-        }else {
-            id = "s";
-        }
-        return id+y;
-    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
